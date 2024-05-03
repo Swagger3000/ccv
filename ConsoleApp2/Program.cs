@@ -26,7 +26,7 @@ namespace Conditional
                 }
                 else
                 {
-                    Console.WriteLine("{0} is the largest", third);
+                    Console.WriteLine("{0} is the larges", third);
                 }
             }
         }
