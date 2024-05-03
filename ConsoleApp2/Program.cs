@@ -1,17 +1,33 @@
-﻿namespace ConsoleApp1
+﻿using System;
+
+namespace Conditional
 {
-    internal class Program
+    class Nested
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            int a = -1;
-            if (a < 0)
+            int first = 7, second = -23, third = 13;
+            if (first > second)
             {
-                Console.WriteLine("a is negative.");
+                if (first > third)
+                {
+                    Console.WriteLine("{0} is the largest", first);
+                }
+                else
+                {
+                    Console.WriteLine("{0} is the largest", third);
+                }
             }
             else
             {
-                Console.WriteLine("a is positive.");
+                if (second > third)
+                {
+                    Console.WriteLine("{0} is the largest", second);
+                }
+                else
+                {
+                    Console.WriteLine("{0} is the largest", third);
+                }
             }
         }
     }
